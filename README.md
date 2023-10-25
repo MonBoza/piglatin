@@ -1,3 +1,20 @@
+
+Describe: inputArray()
+
+Test: "It will get the value of the input object with id 'inputBox'."
+Code: 
+const inputBox = document.getElementById("inputBox").value;
+inputArray();
+Expected Output: undefined
+
+Test: "It will turn variable "inputBox" into an Array"
+Code: 
+const inputBoxArray = inputBox.split(" ");
+inputArray();
+Expected Output: undefined
+
+
+
 Describe: pigLatin(inputBoxArray)
 
 Test: "It will create the new p element variable newPhrase with let"
@@ -34,11 +51,14 @@ Expected Output: null
 
 
 
+
+
+
 ///////// Pseudocode
 variable "result"
 
 ["this", "is", "a", "test"]
->
+
 ["t","h","i","s"]  ["i","s"] ["a"]
 
 ["q","u","e","r","y"]
@@ -64,24 +84,3 @@ function pigLatin(inputBoxArray) {
 
 
 
-Describe: inputArray()
-
-Test: "It will get the value of the input object with id 'inputBox'."
-Code: 
-const inputBox = document.getElementById("inputBox").value;
-inputArray();
-Expected Output: undefined
-
-Test: "It will turn variable "inputBox" into an Array"
-Code: 
-const inputBoxArray = inputBox.split(" ");
-inputArray();
-Expected Output: undefined
-
-Test: "It will split inputBoxArray into individual arrays"
-Code:
-inputBoxArray = ["this", "is", "a", "test"]
-inputBoxArray.forEach(function(word) {
-  word.split();
-})
-Expected Output: ["t","h","i","s"] ["i","s"] ["a"] ["t","e","s","t"]
